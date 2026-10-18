@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Counter from "./Counter";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -40,6 +42,7 @@ export default function Home() {
             </a>{" "}
             center.
             <li>こんにちは</li>
+            <p className="mt-4"><Link href="/about">Aboutページへ移動</Link></p>
           </p>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
